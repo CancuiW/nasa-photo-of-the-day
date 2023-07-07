@@ -2,10 +2,10 @@ import React from "react";
 
 export default function NasaPhoto (props){
     return (
-        <div className="nasa-photo-wrapper">
+        <div className="flex flex-col items-center">
         <h3>{props.datas.title}</h3>
         <p>{props.datas.date}</p>
-        <img src={props.datas.hdurl} /> 
+            <img src={props.datas.hdurl} className="w-3/4 h-auto" /> 
         <p>{props.datas.explanation}</p>
         </div>
 
